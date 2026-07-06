@@ -1,13 +1,32 @@
 body {
-
     max-width: 900px;
-
     margin: auto;
-
     padding: 60px;
 
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
 
-    line-height: 1.6;
+header {
+    margin-bottom: 40px;
+}
 
+nav {
+    margin-bottom: 60px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 80px;
+    color: gray;
+    font-size: 0.9rem;
 }
