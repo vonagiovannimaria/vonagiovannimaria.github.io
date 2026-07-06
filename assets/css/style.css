@@ -95,3 +95,37 @@ footer {
     font-size: .9rem;
 
 }
+
+.project-card {
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    padding: 30px;
+
+    margin-top: 30px;
+
+    transition: .2s;
+
+}
+
+.project-card:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.project-card h3 {
+
+    margin-top: 0;
+
+}
+
+.project-card a {
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
