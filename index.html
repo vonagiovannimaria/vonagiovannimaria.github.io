@@ -19,63 +19,126 @@
 
 <body>
 
-    <header>
-        <h1>Giovanni Maria Vona</h1>
-        <p>DSP Researcher · Sound Designer · Computer Music</p>
+    <header class="site-header">
+
+        <div>
+            <h1>Giovanni Maria Vona</h1>
+            <p>Digital Signal Processing · Computer Music · Sound Design</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="https://github.com/vonagiovannimaria">GitHub</a>
+        </nav>
+
     </header>
-
-    <nav>
-        <section>
-
-            <h2>About</h2>
-
-             <p>
-                I am a musician and researcher focused on digital signal processing,
-                computer music and sound design.
-            </p>
-
-            <p>
-                My work explores spectral processing, timbre analysis,
-                psychoacoustics and real-time audio systems,
-                combining artistic practice with scientific research.
-             </p>
-
-        </section>
-        <a href="#">Projects</a>
-        <a href="#">CV</a>
-        <a href="https://github.com/vonagiovannimaria">GitHub</a>
-        <a href="#">Contact</a>
-    </nav>
 
     <main>
 
-        <a href="#">Learn more →</a>
+        <section class="hero">
 
-            <h2>Welcome</h2>
-        
-            </div>
+            <p class="eyebrow">Portfolio</p>
 
-            </section>
+            <h2>
+                Audio software, DSP research and computer music projects.
+            </h2>
 
-            <section>
-
-            <h2>About</h2>
-
-            <p>
-
-            I am a musician and researcher focused on digital signal
-            processing, computer music and sound design.
-            
+            <p class="hero-text">
+                I design and develop tools for sound processing, synthesis and
+                timbral exploration, combining artistic practice with technical
+                research in Max/MSP, RNBO, Faust and related environments.
             </p>
 
-            </section>
+            <div class="hero-links">
+                <a class="button" href="#projects">View projects</a>
+                <a class="button secondary" href="https://github.com/vonagiovannimaria">GitHub profile</a>
+            </div>
+
+        </section>
+
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <p class="project-type">Max/MSP · Granular synthesis</p>
+                    <h3>Controlled Grain Engine</h3>
+                    <p>
+                        A real-time granular processing engine developed in Max/MSP,
+                        focused on grain control, envelope design and performance-oriented
+                        sound transformation.
+                    </p>
+                    <a href="https://github.com/vonagiovannimaria/controlled-grain-engine">View repository →</a>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-type">RNBO · Reverb · Audio plugin</p>
+                    <h3>Scatola di Metallo</h3>
+                    <p>
+                        An experimental reverberation and timbral processing system
+                        developed in Max/RNBO and exported as an audio plugin.
+                    </p>
+                    <a href="https://github.com/vonagiovannimaria/scatola-di-metallo">View repository →</a>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-type">Electroacoustic music · 8-channel audio</p>
+                    <h3>Studio sulla Dissoluzione Timbrica</h3>
+                    <p>
+                        An octophonic electroacoustic composition exploring timbral
+                        dissolution, spatialization and the transformation of recorded
+                        instrumental material.
+                    </p>
+                    <a href="https://github.com/vonagiovannimaria/studio-sulla-dissoluzione-timbrica">View repository →</a>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-type">Faust · Spatial audio</p>
+                    <h3>Spatializer8ch Faust</h3>
+                    <p>
+                        An eight-channel spatialization tool developed in Faust,
+                        designed for circular loudspeaker setups and real-time spatial
+                        control.
+                    </p>
+                    <a href="https://github.com/vonagiovannimaria/spatializer8ch-faust">View repository →</a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="section about-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>Research, sound and software</h2>
+            </div>
+
+            <p>
+                I am a musician and sound technician focused on digital signal
+                processing, computer music and experimental sound design.
+                My work investigates the relationship between technical systems,
+                timbre, perception and musical practice.
+            </p>
+
+            <p>
+                This portfolio collects my audio software, academic projects,
+                electroacoustic works and research-oriented tools.
+            </p>
+
+        </section>
 
     </main>
 
     <footer>
-
         <p>© 2026 Giovanni Maria Vona</p>
-
     </footer>
 
 </body>
