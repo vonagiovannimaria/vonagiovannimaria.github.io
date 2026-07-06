@@ -507,3 +507,39 @@ nav a:hover {
     }
 
 }
+
+/* ---------- VRBAN covers size fix ---------- */
+
+.vrban-card .cover-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 12px;
+
+    margin: 24px 0;
+}
+
+.vrban-card .cover-grid img {
+    display: block;
+
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+    border: 1px solid var(--color-border);
+}
+
+@media (max-width: 620px) {
+
+    .vrban-card .cover-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .vrban-card .cover-grid img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+}
