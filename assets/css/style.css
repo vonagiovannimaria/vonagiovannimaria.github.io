@@ -156,9 +156,8 @@ nav a:hover {
 }
 
 .project-card {
-    min-height: 320px;
 
-    padding: 30px;
+    padding: 24px;
 
     border: 1px solid #ddd;
     border-radius: 18px;
@@ -542,4 +541,23 @@ nav a:hover {
         aspect-ratio: 1 / 1;
     }
 
+}
+
+/* ---------- Project cover images ---------- */
+
+.project-cover {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+
+    margin-bottom: 24px;
+
+    object-fit: cover;
+
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+
+    background: var(--color-accent-soft);
 }
