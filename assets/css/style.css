@@ -597,3 +597,18 @@ nav a:hover {
     }
 
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-grid,
+.project-card {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.project-card {
+    overflow: hidden;
+}
