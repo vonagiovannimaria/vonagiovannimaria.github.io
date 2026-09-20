@@ -16,6 +16,104 @@
 
     <link rel="stylesheet" href="../assets/css/style.css">
 
+    <style>
+        /* Hero portrait composition */
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-photo-composition {
+            width: min(100%, 560px);
+            margin: 0 auto 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.9rem;
+            align-items: start;
+        }
+
+        .hero-photo {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            border-radius: 26px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
+            transition: transform 220ms ease, box-shadow 220ms ease;
+        }
+
+        .profile-photo-1 {
+            object-position: center;
+        }
+
+        .profile-photo-2 {
+            object-position: center;
+        }
+
+        .hero-photo:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 28px 65px rgba(0, 0, 0, 0.24);
+        }
+
+        @media (min-width: 800px) {
+            .hero-photo-composition {
+                position: relative;
+                display: block;
+                min-height: 430px;
+            }
+
+            .hero-photo {
+                position: absolute;
+                width: 58%;
+                max-width: 300px;
+            }
+
+            .profile-photo-1 {
+                top: 0;
+                left: 0;
+                z-index: 1;
+                transform: rotate(-1.5deg);
+            }
+
+            .profile-photo-2 {
+                top: 72px;
+                right: 0;
+                z-index: 2;
+                transform: rotate(1.5deg);
+            }
+
+            .profile-photo-1:hover {
+                transform: rotate(-1.5deg) translateY(-6px);
+            }
+
+            .profile-photo-2:hover {
+                transform: rotate(1.5deg) translateY(-6px);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-photo {
+                transition: none;
+            }
+
+            .hero-photo:hover,
+            .profile-photo-1:hover,
+            .profile-photo-2:hover {
+                transform: none;
+            }
+
+            @media (min-width: 800px) {
+                .profile-photo-1 {
+                    transform: rotate(-1.5deg);
+                }
+
+                .profile-photo-2 {
+                    transform: rotate(1.5deg);
+                }
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -69,7 +167,18 @@
 
             <aside class="hero-visual">
 
-                <img src="../assets/img/profile.jpg" alt="Ritratto di Giovanni Maria Vona" class="profile-photo">
+                <div class="hero-photo-composition" aria-label="Ritratti di Giovanni Maria Vona">
+                    <img
+                        src="../assets/img/profile.jpg"
+                        alt="Ritratto di Giovanni Maria Vona"
+                        class="hero-photo profile-photo-1"
+                    >
+                    <img
+                        src="../assets/img/modular.jpg"
+                        alt="Giovanni Maria Vona mentre suona un sistema di sintesi modulare"
+                        class="hero-photo profile-photo-2"
+                    >
+                </div>
 
                 <div class="profile-note">
                     <p class="eyebrow">Focus attuale</p>
